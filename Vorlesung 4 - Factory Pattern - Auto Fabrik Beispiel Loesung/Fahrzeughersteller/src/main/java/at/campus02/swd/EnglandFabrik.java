@@ -1,0 +1,17 @@
+package at.campus02.swd;
+
+
+public class EnglandFabrik extends Fabrik{
+
+    @Override
+    public Auto produziereAuto(AutoTyp typ){
+
+        if (typ == AutoTyp.MonsterTruck)
+            return new MonsterTruck();
+
+        else if (typ == AutoTyp.LKW)
+            return new LKW();
+
+        return null;
+    }
+}
